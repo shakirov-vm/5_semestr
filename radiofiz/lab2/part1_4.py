@@ -37,6 +37,8 @@ dvpf = np.fft.fftshift(np.fft.fft(x_k_shift, points_quantity))
 
 dvpf_abs = np.abs(dvpf)
 
+print("X = e^(-j * pi * (nu - nu_0)(N - 1)) * sin(pi * (nu - nu_0) * n) / sin(pi * (nu - nu_0))")
+
 plt.plot(nu, dvpf_abs)
 
 plt.title('Модуль')

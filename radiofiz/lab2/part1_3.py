@@ -35,7 +35,7 @@ x_k_diff = 1j / (2 * np.pi) * (1j * 2 * np.pi * N * np.exp(-1j * 2 * np.pi * nu 
 				 1j * 2 * np.pi * np.exp(-1j * 2 * np.pi * nu)) / ((1 - np.exp(-1j * 2 * np.pi * nu)) ** 2)
 x_k_diff[500] /= 2
 
-plt.figure (figsize=[8, 4])
+plt.figure (figsize = [8, 4])
 plt.plot(nu, abs(x_k_diff))
 
 plt.xlim ([-0.5, 0.5])
